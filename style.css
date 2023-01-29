@@ -7,21 +7,8 @@
   font-family: "Poppins";
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins";
-}
-
-.fashion {
-  height: 100vh;
-}
-
 .wrapper {
-  max-width: 1462px;
+  max-width: 1290px;
   margin: auto;
 }
 
@@ -48,6 +35,12 @@
   gap: 55px;
 }
 
+@media (max-width: 1120px) {
+  .menu {
+    display: none;
+  }
+}
+
 .link-menu {
   font-weight: 500;
   font-size: 22px;
@@ -55,19 +48,83 @@
   text-decoration: none;
 }
 
-.black {
-  background: #000000;
-  border-radius: 7px;
-  color: white;
-  font-weight: 500;
+@media (max-width: 1120px) {
+  .link-menu {
+    display: none;
+  }
+}
+
+.link {
   font-size: 24px;
-  line-height: 36px;
-  padding: 13px 22px;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-family: "Nerko One";
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.link:hover {
+  animation-name: button;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes button {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes link2 {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.link2 {
+  font-size: 24px;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-family: "Secular One";
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.link2:hover {
+  animation-name: link2;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
 }
 
 .logos {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1120px) {
+  .logos {
+    margin: auto;
+  }
 }
 
 .down-menu {
@@ -76,15 +133,10 @@
   background-color: #f5f5f5;
   border-radius: 59px;
   margin-top: 56px;
-  position: relative;
-}
-
-.img {
-  position: absolute;
-  bottom: 0px;
-  right: 85px;
-  width: 571px;
-  height: 571px;
+  background-image: url("./img/incendiary-fantastically-beautiful-girl-coat-eco-fur-moves-fun-picture-lovely-lady-pink-clothes-removebg-preview\ 1.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 617px 617px;
 }
 
 .text {
@@ -145,7 +197,7 @@
   text-decoration: none;
   background: #000000;
   border-radius: 10px;
-  padding: 10px 30px;
+  padding: 5px 22px;
   font-weight: 500;
   font-size: 20px;
   color: #ffffff;
@@ -157,13 +209,11 @@
 }
 
 .yellow-block {
-  width: 100%;
   height: 186px;
   background: #ebd96b;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 80px;
 }
 
 .logo1 {
@@ -174,7 +224,6 @@
 /** new-block **/
 
 .new-info {
-  height: 100vh;
   padding-top: 69px;
 }
 
@@ -205,6 +254,7 @@
   height: 700px;
   object-fit: cover;
   border-radius: 20px;
+  display: block;
 }
 
 .info-temt {
@@ -264,22 +314,18 @@
     #fae157 91.52%,
     #f9df56 97.87%
   );
-  height: 100%;
-  margin-top: 20%;
 }
 
-.photo {
-  width: 844px;
-  height: 844px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("./img/dg.png");
-}
+
 
 .blocks {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-image: url("./img/dg.png");
+  background-position: left;
+  background-size: 647px 647px;
+  background-repeat: no-repeat;
 }
 
 .info-title {
@@ -333,6 +379,37 @@
   color: #ffffff;
 }
 
+.link1 {
+  font-size: 24px;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-family: "Nerko One";
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.link1:hover {
+  animation-name: button;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes button {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /** your **/
 
 .your {
@@ -347,7 +424,7 @@
 }
 
 .gallery__imh {
-  width: 720px;
+  width: 100%;
   height: 560px;
   object-fit: cover;
   border-radius: 20px;
@@ -360,12 +437,31 @@
   align-items: center;
 }
 
+.new__text {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.06em;
+  position: relative;
+  margin-bottom: 68px;
+}
+
+.new__text::after {
+  content: "";
+  z-index: -999;
+}
+
+.logo3 {
+  position: absolute;
+  left: 280px;
+  top: 1113px;
+  width: 166px;
+  z-index: -999;
+}
+
 /** downoload **/
 
-.download {
-  height: 100vh;
-  padding-top: 5%;
-}
+
 
 .left-title {
   font-weight: 900;
@@ -403,7 +499,7 @@
 }
 
 .top-footer {
-  height: 60vh;
+
   background: #000000;
 }
 
@@ -449,17 +545,36 @@
   color: #767676;
 }
 
+
 .input-button {
-  background: #000000;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 33px;
-  line-height: 35px;
-  letter-spacing: 0.03em;
-  text-transform: capitalize;
-  color: #ffffff;
+  font-size: 24px;
+  display: inline-block;
+  background-color: black;
+  color: white;
   text-decoration: none;
-  padding: 10px 16px;
+  font-family: "Nerko One";
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.input-button:hover {
+  animation-name: button;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes button {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .fashion-text {
@@ -518,13 +633,26 @@
 }
 
 .right-text {
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 20px;
   letter-spacing: 0.02em;
   color: #8e8e8e;
+  margin-top: 34px;
+  max-width: 305px;
+}
+
+.right-flex-block {
+  display: flex;
+  gap: 50px;
+  max-width: 860px;
+  padding-top: 95px;
 }
 
 .flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.right-blocks {
+  width: 100%;
 }
