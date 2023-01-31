@@ -144,6 +144,7 @@
   background-position: right;
   background-repeat: no-repeat;
   background-size: 617px 617px;
+  padding-top: 30px;
 }
 
 @media (max-width: 1020px) {
@@ -155,6 +156,7 @@
 
 .text {
   max-width: 374px;
+  padding-left: 40px;
 }
 
 @media (max-width: 1020px) {
@@ -198,6 +200,12 @@
   display: flex;
   gap: 20px;
   align-items: center;
+}
+
+@media (max-width: 1020px) {
+  .link-logo {
+    justify-content: center;
+  }
 }
 
 .logo {
@@ -247,6 +255,12 @@
   letter-spacing: 0.06em;
   position: relative;
   margin-bottom: 68px;
+}
+
+@media (max-width: 1020px) {
+  .new__title {
+    text-align: center;
+  }
 }
 
 .new__title::after {
@@ -345,10 +359,17 @@
   padding: 40px 0 40px 0;
 }
 
+@media (max-width: 1020px) {
+  .pay {
+    text-align: center;
+  }
+}
+
 .blocks {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 
 .info-title {
@@ -388,6 +409,12 @@
   width: 480px;
   font-weight: 900;
   font-size: 111px;
+}
+
+@media (max-width: 1020px) {
+  .pay-ingo {
+    text-align: center;
+  }
 }
 
 .link1 {
